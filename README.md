@@ -62,14 +62,15 @@ Class-wise average precisions:
 |   train     |    83.59     |
 |  tvmonitor  |    69.59     |
 
+Some examples in folder `images`
 ## TODO 
 I hope to complete the to-do list in the near future (Never give up!):
 
-* [] Train model on VOC2012 + VOC2007 dataset (I need a more powerful GPU -_- ).
-* [] Support MS COCO dataset.
-* [] Implement SSD512.
-* [] Implement SSD with other backbone (ResNet, MobileNet,...).
-* [] Implement Gui for object detection.
+* [ ] Train model on VOC2012 + VOC2007 dataset (I need a more powerful GPU -_- ).
+* [ ] Support for MS COCO dataset.
+* [ ] Implement SSD512.
+* [ ] Implement SSD with other backbone (ResNet, MobileNet,...).
+* [ ] Implement Gui for object detection.
 
 ## References
 - Wei Liu, et al. "SSD: Single Shot MultiBox Detector." [ECCV2016]((http://arxiv.org/abs/1512.02325)).
