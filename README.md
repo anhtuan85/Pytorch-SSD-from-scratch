@@ -71,7 +71,3 @@ I hope to complete the to-do list in the near future (Never give up!):
 * [ ] Implement SSD512.
 * [ ] Implement SSD with other backbone (ResNet, MobileNet,...).
 * [ ] Implement Gui for object detection.
-
-## References
-- Wei Liu, et al. "SSD: Single Shot MultiBox Detector." [ECCV2016]((http://arxiv.org/abs/1512.02325)).
-- [Original Implementation (CAFFE)](https://github.com/weiliu89/caffe/tree/ssd)
