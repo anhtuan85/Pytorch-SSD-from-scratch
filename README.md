@@ -7,6 +7,10 @@ This repository implements SSD300 with VGG16 backbone Architecture: [paper](http
 * Install [Pytorch](https://pytorch.org/)
 * Clone this repository (only support Python 3+)
 * Download VOC dataset (currently support [VOC dataset](http://host.robots.ox.ac.uk/pascal/VOC/))
+* Install requirements:
+```
+pip install -r requirements.txt
+```
 
 ## Demo
 Download pretrained model for VOC2007 dataset: [Google Drive](https://drive.google.com/file/d/1-4-k0vQD5nc_oU07J3jjVtek7R_UdPVk/view?usp=sharing)
