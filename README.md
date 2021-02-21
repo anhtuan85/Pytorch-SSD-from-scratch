@@ -69,11 +69,12 @@ Class-wise average precisions:
 Some examples in folder `images`
 
 ## Create simple app with Streamlit
-Install `streamlit` and run file `app.py`:
+Install `streamlit`, add file weights path and run file `app.py`:
 
 ```
 streamlit run app.py
 ```
+![alt text](https://github.com/anhtuan85/Pytorch-SSD-from-scratch/blob/master/images/app.png)
 ## TODO 
 I hope to complete the to-do list in the near future (Never give up!):
 
