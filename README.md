@@ -67,6 +67,13 @@ Class-wise average precisions:
 |  tvmonitor  |    69.59     |
 
 Some examples in folder `images`
+
+## Create simple app with Streamlit
+Install `streamlit` and run file `app.py`:
+
+```
+streamlit run app.py
+```
 ## TODO 
 I hope to complete the to-do list in the near future (Never give up!):
 
@@ -74,4 +81,4 @@ I hope to complete the to-do list in the near future (Never give up!):
 * [ ] Support for MS COCO dataset.
 * [ ] Implement SSD512.
 * [ ] Implement SSD with other backbone (ResNet, MobileNet,...).
-* [ ] Implement Gui for object detection.
+* [x] Implement app for object detection.
