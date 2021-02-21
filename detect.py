@@ -21,7 +21,7 @@ ap.add_argument("--trained_model", default = "model_state_ssd300.pth.tar", type=
                 help = "Trained state_dict file path to open")
 ap.add_argument("--input", type= str, help= "Input path for detect")
 ap.add_argument("--output", type= str, help = "Output path to save")
-ap.add_argument("--min_score", default= 0.4, type= float, help = "Min score for NMS")
+ap.add_argument("--min_score", default= 0.4, type= float, help = "Min score for detect")
 ap.add_argument("--max_overlap", default= 0.45, type= float, help = "Max overlap for NMS")
 ap.add_argument("--top_k", default= 200, type= int, help = "Top k for NMS")
 args = ap.parse_args()
@@ -40,7 +40,7 @@ to_tensor = transforms.ToTensor()
 normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
                                  std=[0.229, 0.224, 0.225])
 
-def detect(original_image, min_score, max_overlap, top_k, suppress = None):
+def detect(model, device, original_image, min_score, max_overlap, top_k, suppress = None):
     image = normalize(to_tensor(resize(original_image)))
     
     image = image.to(device)
@@ -91,7 +91,7 @@ def detect(original_image, min_score, max_overlap, top_k, suppress = None):
 if __name__ == '__main__':
     original_image = Image.open(img_path, mode='r')
     original_image = original_image.convert('RGB')
-    annotated_image = detect(original_image, min_score=args.min_score, 
+    annotated_image = detect(model, device, original_image, min_score=args.min_score, 
                              max_overlap=args.max_overlap, top_k= args.top_k)
     annotated_image.save(ouput_path)
     annotated_image.show()
